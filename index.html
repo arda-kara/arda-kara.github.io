@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arda Kara - EEE Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-img">
+                    <!-- Replace with your actual image path -->
+                    <img src="images/profile-photo.jpg" alt="Arda Kara">
+                </div>
+                <h1>Arda Kara</h1>
+                <p class="title">Electrical & Electronic Engineering Student</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> arda.kara@bilkent.edu.tr</p>
+                    <p><i class="fas fa-phone"></i> +90 505 617 7607</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ankara, Turkey</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/arda-kara" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ardakara" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/ardakara" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#research" class="nav-link">Research</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section id="about" class="section active">
+                <h2>About Me</h2>
+                <p>I am a highly motivated Electrical and Electronics Engineering student at Bilkent University, with a strong foundation in robotics, reinforcement learning, and control theory. My expertise spans digital circuit design, FPGA systems, embedded programming, and AI-driven robotic planning. Through my research at Bilkent's LiRA and GDN Labs, I have worked on robotic simulation environments, task-and-motion planning algorithms, and game-theoretic multi-agent systems.
+                <p>Beyond academia, I am actively involved in interdisciplinary projects, including autonomous systems, financial algorithmic trading, and human-robot interaction. I have a passion for problem-solving in complex, non-linear systems and aim to contribute to cutting-edge research in robotics and AI. Additionally, my experience in theatrical performance and vocal training has refined my communication and leadership skills, allowing me to adapt to dynamic team environments.</p>
+                <p>I aspire to further my expertise in AI, robotics, and space technology through research and industry experience, ultimately working towards innovations that bridge intelligent automation with real-world applications.</p>
+            </section>
+
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Electrical & Electronic Engineering</h3>
+                        <p class="institution">Bilkent University</p>
+                        <p class="period">3rd Year Student</p>
+                        <p>3.31/4.00 GPA</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>C/C++</li>
+                            <li>MATLAB</li>
+                            <li>R</li>
+                            <li>Spice</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                            <li>ROS2</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Electronics</h3>
+                        <ul class="skill-list">
+                            <li>Circuit Design & PCB Layout & Simulation</li>   
+                            <li>Microcontrollers</li>
+                            <li>FPGA Programming</li>
+                            <li>Soldering & Prototyping</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI & Robotics</h3>
+                        <ul class="skill-list">
+                            <li>Machine Learning & Deep Learning</li>
+                            <li>Computer Vision</li>
+                            <li>ROS2 (Robot Operating System)</li>
+                            <li>Sensor Integration</li>
+                            <li>Control Systems</li>
+                            <li>Reinforcement Learning</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Finance</h3>
+                        <ul class="skill-list">
+                            <li>Financial Modeling</li>
+                            <li>Data Analysis</li>
+                            <li>Algorithmic Trading</li>
+                            <li>Risk Assessment</li>
+                            <li>Quantitative Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="robotics">Robotics</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="fpga">FPGA</button>
+                    <button class="filter-btn" data-filter="embedded">Embedded</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="pcb">PCB Design</button>
+                    <button class="filter-btn" data-filter="software">Software</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Energy Market Optimization -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/energy-market.jpg" alt="Energy Market Optimization">
+                        </div>
+                        <div class="project-info">
+                            <h3>Energy Market Optimization</h3>
+                            <p>Developed an AI-driven energy distribution optimization system using reinforcement learning to balance supply and demand in power grids. Implemented multiple RL agents (PPO, SAC) to optimize energy allocation while considering renewable sources, price volatility, and emissions. The system includes a comprehensive market simulator with visualization tools for demand-supply analysis.</p>
+                            <div class="project-tags">
+                                <span>Reinforcement Learning</span>
+                                <span>TensorFlow</span>
+                                <span>Energy Markets</span>
+                                <span>PPO/SAC</span>
+                            </div>
+                            <a href="https://github.com/arda-kara/energy-market-optimization.git" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Solar Forecaster LSTM -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/solar-forecaster.jpg" alt="Solar Forecaster LSTM">
+                        </div>
+                        <div class="project-info">
+                            <h3>Power Grid Estimator / Solar Forecaster</h3>
+                            <p>Developed a sophisticated machine learning system using LSTM neural networks to forecast solar activity and space weather conditions critical for power grid stability and satellite operations. The system analyzes historical solar data (GOES X-ray flux) and solar wind parameters to predict future conditions with multi-horizon forecasting capabilities up to 12 time steps ahead.</p>
+                            <div class="project-tags">
+                                <span>Deep Learning</span>
+                                <span>LSTM</span>
+                                <span>TensorFlow</span>
+                                <span>Time Series</span>
+                                <span>Transfer Learning</span>
+                            </div>
+                            <a href="https://github.com/arda-kara/solar-forecaster-lstm" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- VSLAM Robot Project -->
+                    <div class="project-card" data-category="robotics">
+                        <div class="project-img">
+                            <img src="images/slam.jpg" alt="Autonomous VSLAM Robot">
+                        </div>
+                        <div class="project-info">
+                            <h3>Autonomous VSLAM Robot</h3>
+                            <p>Developed a Visual-Inertial Simultaneous Localization and Mapping (VISLAM) robot capable of autonomous navigation in bounded environments. The system integrates ROS2, a Raspberry Pi 4, and custom FPGA acceleration for image preprocessing to achieve real-time performance. The FPGA hardware accelerator, written in VHDL, filters images into grayscale and achieves a 22% improvement in computation speed.</p>
+                            <div class="project-tags">
+                                <span>FPGA</span>
+                                <span>Robotics</span>
+                                <span>ROS2</span>
+                                <span>Computer Vision</span>
+                                <span>VHDL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ardakara/vslam-robot" class="project-link">Robot System <i class="fas fa-arrow-right"></i></a>
+                                <a href="https://github.com/arda-kara/vslam-hardware-accelerator.git" class="project-link">Hardware Accelerator <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- EchoArm Project -->
+                    <div class="project-card" data-category="robotics">
+                        <div class="project-img">
+                            <img src="images/echoarm.jpg" alt="EchoArm">
+                        </div>
+                        <div class="project-info">
+                            <h3>EchoArm</h3>
+                            <p>Designed a large robotic arm engineered to replicate the movements of a smaller, manually operated arm, with up to 4 DoF. Uses KL25Z development board as the main processing unit.</p>
+                            <div class="project-tags">
+                                <span>Robotics</span>
+                                <span>KL25Z</span>
+                                <span>Control Systems</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Specialized Chat-Bot -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/chatbot.jpg" alt="Specialized Chat-Bot">
+                        </div>
+                        <div class="project-info">
+                            <h3>Specialized Chat-Bot</h3>
+                            <p>Trained and implemented a basic specialized Chatbot that leverages retrieval augmented generation (RAG) using GPT-4 LLM, OpenAI embeddings, ChromaDB, and LangChain.</p>
+                            <div class="project-tags">
+                                <span>NLP</span>
+                                <span>RAG</span>
+                                <span>LangChain</span>
+                                <span>GPT-4</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Plate Recogniser -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/plate-recognizer.jpg" alt="Plate Recogniser">
+                        </div>
+                        <div class="project-info">
+                            <h3>Plate Recogniser</h3>
+                            <p>A plate recognition system that uses Haar Classifiers as a base to find plates in a prerecorded video feed. Has adjustable parameters that specifies the maximum amount of classifications allowed in a frame.</p>
+                            <div class="project-tags">
+                                <span>Computer Vision</span>
+                                <span>Haar Classifiers</span>
+                                <span>Image Processing</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Multi-Agent Resource Competition -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/multi-agent.jpg" alt="Multi-Agent Resource Competition">
+                        </div>
+                        <div class="project-info">
+                            <h3>Multi-Agent Resource Competition Simulation</h3>
+                            <p>Designed a Dec-POMDP environment under partial observability to simulate thief-villager interactions under restricted resources and used PPO for decentralized policy training followed by centralized application.</p>
+                            <div class="project-tags">
+                                <span>Reinforcement Learning</span>
+                                <span>Game Theory</span>
+                                <span>PPO</span>
+                                <span>Dec-POMDP</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Algorithmic Trading Pipeline -->
+                    <div class="project-card" data-category="finance">
+                        <div class="project-img">
+                            <img src="images/trading-pipeline.jpg" alt="Algorithmic Trading Pipeline">
+                        </div>
+                        <div class="project-info">
+                            <h3>HFT/Normal Algorithmic Trading Pipeline</h3>
+                            <p>Designed a trading app which interfaces with the algorithmic trading pipeline, which trades for you with your desired risk parameters, custom strategies, portfolios, and currencies in real time.</p>
+                            <div class="project-tags">
+                                <span>Finance</span>
+                                <span>Algorithmic Trading</span>
+                                <span>Backtesting</span>
+                                <span>RL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Market Forecaster -->
+                    <div class="project-card" data-category="finance">
+                        <div class="project-img">
+                            <img src="images/market-forecaster.jpg" alt="Market Forecaster">
+                        </div>
+                        <div class="project-info">
+                            <h3>Market Forecaster</h3>
+                            <p>Designed a pipeline integrating reinforcement learning with time-series analysis to extract trends and correlations across stocks and cryptocurrencies. Also working on news sentiment analysis for black swan detection.</p>
+                            <div class="project-tags">
+                                <span>Finance</span>
+                                <span>Time-Series Analysis</span>
+                                <span>Reinforcement Learning</span>
+                                <span>Sentiment Analysis</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- FPGA ALU -->
+                    <div class="project-card" data-category="fpga">
+                        <div class="project-img">
+                            <img src="images/alu-fpga.jpg" alt="ALU FPGA Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>ALU</h3>
+                            <p>Designed and implemented a modular ALU that can do basic arithmetic and shifting operations. Is adjustable for extra operations. Was implemented on a BASYS3 FPGA Board.</p>
+                            <div class="project-tags">
+                                <span>FPGA</span>
+                                <span>Digital Design</span>
+                                <span>BASYS3</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- FPGA Ethernet Network -->
+                    <div class="project-card" data-category="fpga">
+                        <div class="project-img">
+                            <img src="images/fpga-ethernet.jpg" alt="FPGA Ethernet Network">
+                        </div>
+                        <div class="project-info">
+                            <h3>FPGA-to-Computer Ethernet Network</h3>
+                            <p>Designed a 10/100T Ethernet capable FPGA network compatible with computer connections using Nexys A7-100T FPGA development board. Uses IPV4 protocol and responds to specific UDP frames.</p>
+                            <div class="project-tags">
+                                <span>FPGA</span>
+                                <span>Networking</span>
+                                <span>Microblaze</span>
+                                <span>AXI4</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Servo Tester -->
+                    <div class="project-card" data-category="embedded">
+                        <div class="project-img">
+                            <img src="images/servo-tester.jpg" alt="Servo Tester">
+                        </div>
+                        <div class="project-info">
+                            <h3>Quadruple Servo Tester & Fault Detector</h3>
+                            <p>Designed and implemented a quadruple servo driver with 4 potentiometers for rotation control using NXP KL25Z4 MCU board. Includes an internal OPAMP buffer circuit for detecting faulty servos.</p>
+                            <div class="project-tags">
+                                <span>Embedded</span>
+                                <span>KL25Z4</span>
+                                <span>PWM</span>
+                                <span>OPAMP</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- STM32 Custom PCB -->
+                    <div class="project-card" data-category="pcb">
+                        <div class="project-img">
+                            <img src="images/stm32-pcb.jpg" alt="STM32 Custom PCB">
+                        </div>
+                        <div class="project-info">
+                            <h3>STM32F103C8T6 Custom Communication PCB</h3>
+                            <p>Designed an STM32F3 MCU board with RS232, 4-channel DAC, 2-channel ADC, and USB support with an ST-Link programming interface. Communicates with MCP4728 DAC IC via I2C.</p>
+                            <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>STM32</span>
+                                <span>I2C</span>
+                                <span>DAC/ADC</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Thermocouple Amplifier -->
+                    <div class="project-card" data-category="pcb">
+                        <div class="project-img">
+                            <img src="images/thermocouple.jpg" alt="Thermocouple Amplifier">
+                        </div>
+                        <div class="project-info">
+                            <h3>Thermocouple Instrumentation Amplifier Controlled Heater</h3>
+                            <p>Designed, simulated, tested, and implemented a custom analog thermocouple instrumentation amplifier-controlled heater circuit on a one-sided PCB as coursework for Bilkent University.</p>
+                            <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>Analog Electronics</span>
+                                <span>Instrumentation Amplifier</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Automatic Trading Bot -->
+                    <div class="project-card" data-category="finance">
+                        <div class="project-img">
+                            <img src="images/trading-bot.jpg" alt="Automatic Trading Bot">
+                        </div>
+                        <div class="project-info">
+                            <h3>Automatic Trading Bot</h3>
+                            <p>An automated trading bot which can be both deployed in a test server or official trading servers via Cloud. Uses a default MA&RSI strategy as base. Strategy used is adjustable. Currently inactive.</p>
+                            <div class="project-tags">
+                                <span>Finance</span>
+                                <span>Algorithmic Trading</span>
+                                <span>Cloud</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Regression Model -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/regression-model.jpg" alt="Regression Model">
+                        </div>
+                        <div class="project-info">
+                            <h3>Regression Model</h3>
+                            <p>Designed and implemented a curve fit model which uses polynomial regression, linear regression, exponential fit, logarithmic fit, and spline interpolation. Can be used by supplying html, css, or excel files.</p>
+                            <div class="project-tags">
+                                <span>Machine Learning</span>
+                                <span>Data Analysis</span>
+                                <span>Regression</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Maze-Based Manipulation Puzzle -->
+                    <div class="project-card" data-category="robotics">
+                        <div class="project-img">
+                            <img src="images/maze-puzzle.jpg" alt="Maze-Based Manipulation Puzzle">
+                        </div>
+                        <div class="project-info">
+                            <h3>Customizable Maze-Based Manipulation Puzzle Simulation</h3>
+                            <p>Developed a simulation environment for testing robotic tasks in maze scenarios. Features include a custom maze generator, inverse kinematics solving, and JSON-based scenario sharing.</p>
+                            <div class="project-tags">
+                                <span>Robotics</span>
+                                <span>Simulation</span>
+                                <span>Inverse Kinematics</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Optimized Bottleneck RRT -->
+                    <div class="project-card" data-category="robotics">
+                        <div class="project-img">
+                            <img src="images/bottleneck-rrt.jpg" alt="Optimized Bottleneck RRT">
+                        </div>
+                        <div class="project-info">
+                            <h3>Optimized Bottleneck RRT</h3>
+                            <p>Enhanced Rapidly-exploring Random Tree (RRT) algorithm with subgoal sampling, bottleneck detection, path smoothing, and optimized rewiring to improve pathfinding in complex environments with obstacles.</p>
+                            <div class="project-tags">
+                                <span>Algorithm</span>
+                                <span>Pathfinding</span>
+                                <span>Python</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Swetlana Maze Solver -->
+                    <div class="project-card" data-category="robotics">
+                        <div class="project-img">
+                            <img src="images/swetlana.jpg" alt="Swetlana Maze Solver">
+                        </div>
+                        <div class="project-info">
+                            <h3>Swetlana Maze Solver</h3>
+                            <p>Designed a tool that solves pick&place problems with K-order Markov Optimization and bottleneck RRT using RAI API for Python.</p>
+                            <div class="project-tags">
+                                <span>Robotics</span>
+                                <span>Markov Optimization</span>
+                                <span>RRT</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- MetaTrader5 Abstraction Layer -->
+                    <div class="project-card" data-category="finance">
+                        <div class="project-img">
+                            <img src="images/metatrader.jpg" alt="MetaTrader5 Abstraction Layer">
+                        </div>
+                        <div class="project-info">
+                            <h3>MetaTrader5 Abstraction Layer</h3>
+                            <p>Wrote an abstraction layer for the Meta Trader 5 Python integration library. Currently, only client-side requests are available. Flask integration for broker-side requests is in progress.</p>
+                            <div class="project-tags">
+                                <span>API</span>
+                                <span>Python</span>
+                                <span>Finance</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Analyzer -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-img">
+                            <img src="images/data-analyzer.jpg" alt="Data Analyzer">
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Analyzer</h3>
+                            <p>A program that can explore any finite data set and fit an appropriate nth degree polynomial. Visualizes the fitted polynomial against the data points. Uses Polynomial Regression to fit a function to the dataset.</p>
+                            <div class="project-tags">
+                                <span>Machine Learning</span>
+                                <span>Data Visualization</span>
+                                <span>Polynomial Regression</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- FPGA UART Loopback Server -->
+                    <div class="project-card" data-category="fpga">
+                        <div class="project-img">
+                            <img src="images/fpga-uart.jpg" alt="FPGA UART Loopback Server">
+                        </div>
+                        <div class="project-info">
+                            <h3>FPGA UART Loopback Server</h3>
+                            <p>Implemented a UART server between a Nexys A7-100T FPGA development board and a computer. Uses a Microblaze-based system with AXI4 streams and predefined UART IPs.</p>
+                            <div class="project-tags">
+                                <span>FPGA</span>
+                                <span>UART</span>
+                                <span>Microblaze</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- STM32F103C8T6 USB Driver -->
+                    <div class="project-card" data-category="embedded">
+                        <div class="project-img">
+                            <img src="images/stm32-usb.jpg" alt="STM32 USB Driver">
+                        </div>
+                        <div class="project-info">
+                            <h3>STM32F103C8T6 USB Driver</h3>
+                            <p>Wrote a user-friendly USB driver for STM32F3 chips.</p>
+                            <div class="project-tags">
+                                <span>Embedded</span>
+                                <span>STM32</span>
+                                <span>USB</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- STM32F103C8T6 RS232 Driver -->
+                    <div class="project-card" data-category="embedded">
+                        <div class="project-img">
+                            <img src="images/stm32-rs232.jpg" alt="STM32 RS232 Driver">
+                        </div>
+                        <div class="project-info">
+                            <h3>STM32F103C8T6 RS232 Driver</h3>
+                            <p>Wrote a user-friendly RS232 driver using USART peripherals for STM32F3 chips.</p>
+                            <div class="project-tags">
+                                <span>Embedded</span>
+                                <span>STM32</span>
+                                <span>RS232</span>
+                                <span>USART</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- STM32F103C8T6 DAC Driver -->
+                    <div class="project-card" data-category="embedded">
+                        <div class="project-img">
+                            <img src="images/stm32-dac.jpg" alt="STM32 DAC Driver">
+                        </div>
+                        <div class="project-info">
+                            <h3>STM32F103C8T6 DAC Driver (MCP4728)</h3>
+                            <p>Wrote a user-friendly STM32F3 driver for MCP4728 4-channel DAC. I2C interface is used to communicate with the DAC. Functions included mimic the functions in the original datasheet.</p>
+                            <div class="project-tags">
+                                <span>Embedded</span>
+                                <span>STM32</span>
+                                <span>I2C</span>
+                                <span>DAC</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Custom LDO Converter Circuit -->
+                    <div class="project-card" data-category="pcb">
+                        <div class="project-img">
+                            <img src="images/ldo-converter.jpg" alt="LDO Converter">
+                        </div>
+                        <div class="project-info">
+                            <h3>Custom LDO Converter Circuit</h3>
+                            <p>Designed, simulated, tested, and implemented an LDO converter on a breadboard as coursework for Bilkent University.</p>
+                            <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>Analog Electronics</span>
+                                <span>Power Electronics</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Diode Differential Temperature Sensor -->
+                    <div class="project-card" data-category="pcb">
+                        <div class="project-img">
+                            <img src="images/diode-sensor.jpg" alt="Diode Temperature Sensor">
+                        </div>
+                        <div class="project-info">
+                            <h3>Diode Differential Temperature Sensor</h3>
+                            <p>Designed, simulated, tested, and implemented a Diode-characterized differential temperature sensor as coursework for Bilkent University.</p>
+                            <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>Analog Electronics</span>
+                                <span>Sensors</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- LDO Converter PCB -->
+                    <div class="project-card" data-category="pcb">
+                        <div class="project-img">
+                            <img src="images/ldo-pcb.jpg" alt="LDO Converter PCB">
+                        </div>
+                        <div class="project-info">
+                            <h3>LDO Converter PCB</h3>
+                            <p>Designed a DC/DC isolated LDO converter IC circuit with Altium. It transforms 5V to 3.3V.</p>
+                            <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>Altium</span>
+                                <span>Power Electronics</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- TRC-11 -->
+                    <div class="project-card" data-category="pcb">
+                        <div class="project-img">
+                            <img src="images/trc11.jpg" alt="TRC-11">
+                        </div>
+                        <div class="project-info">
+                            <h3>TRC-11</h3>
+                            <p>Implemented, tested, and simulated a TRC-11 transceiver radio as lab work at Bilkent University.</p>
+                            <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>RF</span>
+                                <span>Transceiver</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Retro Video Game -->
+                    <div class="project-card" data-category="software">
+                        <div class="project-img">
+                            <img src="images/retro-game.jpg" alt="Retro Video Game">
+                        </div>
+                        <div class="project-info">
+                            <h3>Retro Video Game</h3>
+                            <p>A 2D Mario-like game I developed as a High Schooler. Was written using Unity Engine and C#. Used the internal tools of Unity to design levels and create pixel art.</p>
+                            <div class="project-tags">
+                                <span>Game Development</span>
+                                <span>Unity</span>
+                                <span>C#</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Research Assistant</h3>
+                        <p class="institution">Bilkent University - LiRA Lab</p>
+                        <p class="period">June 2023 - Present</p>
+                        <ul>
+                            <li>Developing robotic simulation environments for testing task-and-motion planning algorithms</li>
+                            <li>Implementing and optimizing reinforcement learning algorithms for robotic control</li>
+                            <li>Collaborating with researchers on game-theoretic multi-agent systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Engineering Intern</h3>
+                        <p class="institution">Tech Company</p>
+                        <p class="period">May 2022 - August 2022</p>
+                        <ul>
+                            <li>Contributed to the development of embedded systems for IoT applications</li>
+                            <li>Performed testing and debugging of electronic circuits</li>
+                            <li>Participated in team meetings and presented project updates to stakeholders</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="research" class="section">
+                <h2>Research</h2>
+                <div class="research-item">
+                    <h3>Robotic Task-and-Motion Planning</h3>
+                    <p class="institution">Bilkent University - Learning and Intelligent Robotics Laboratory (LiRA)</p>
+                    <p>Working on developing efficient algorithms for robotic task-and-motion planning in complex environments. My research focuses on optimizing path planning through bottleneck detection and subgoal sampling in RRT algorithms.</p>
+                    <div class="research-highlights">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>Developed an enhanced Rapidly-exploring Random Tree (RRT) algorithm with bottleneck detection</li>
+                            <li>Created a customizable maze-based manipulation puzzle simulation environment for testing robotic tasks</li>
+                            <li>Implemented subgoal sampling techniques to improve pathfinding in complex environments</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="research-item">
+                    <h3>Multi-Agent Reinforcement Learning</h3>
+                    <p class="institution">Bilkent University - Game Design and Development Laboratory (GDN)</p>
+                    <p>Researching game-theoretic approaches to multi-agent reinforcement learning. Focusing on partially observable environments and decentralized policy training with centralized application.</p>
+                    <div class="research-highlights">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>Designed a Dec-POMDP environment to simulate resource competition between agents</li>
+                            <li>Implemented PPO algorithm for training decentralized policies</li>
+                            <li>Exploring Shapley value-based voting mechanisms for multi-agent coordination</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="research-item">
+                    <h3>FPGA Acceleration for Computer Vision</h3>
+                    <p class="institution">Independent Research</p>
+                    <p>Investigating the use of FPGA hardware acceleration for real-time computer vision applications in robotics. Focusing on optimizing image preprocessing for SLAM algorithms.</p>
+                    <div class="research-highlights">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>Implemented grayscaling and filtering algorithms on Artix-7 FPGA</li>
+                            <li>Achieved 22% improvement in computation speed for image preprocessing</li>
+                            <li>Developed modular design compatible with various filter types</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="research-item">
+                    <h3>Reinforcement Learning for Financial Markets</h3>
+                    <p class="institution">Independent Research</p>
+                    <p>Investigating applications of reinforcement learning algorithms for financial market prediction and algorithmic trading. My research focuses on combining traditional time-series analysis with modern RL approaches to create robust prediction models.</p>
+                    <div class="research-highlights">
+                        <h4>Key Areas:</h4>
+                        <ul>
+                            <li>Time-series forecasting using LSTM and transformer architectures</li>
+                            <li>Market regime detection and adaptive trading strategies</li>
+                            <li>Risk-aware reinforcement learning for portfolio optimization</li>
+                            <li>Combining sentiment analysis with price action for improved prediction accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
