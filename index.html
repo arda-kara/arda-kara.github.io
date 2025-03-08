@@ -744,5 +744,19 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <script>
+        // Replace missing project images with default image
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectImages = document.querySelectorAll('.project-img img');
+            
+            projectImages.forEach(img => {
+                img.onerror = function() {
+                    this.src = 'images/default-project.jpg';
+                    this.alt = 'Project Image';
+                };
+            });
+        });
+    </script>
 </body>
 </html> 
