@@ -799,27 +799,68 @@
     <script src="script.js"></script>
     
     <script>
-        // Replace missing project images with default image
+        // Comprehensive image handling solution
         document.addEventListener('DOMContentLoaded', function() {
+            // 1. Define the default image path
+            const defaultImagePath = 'images/default-image.jpg';
+            
+            // 2. Preload the default image to ensure it exists
+            const defaultImage = new Image();
+            defaultImage.src = defaultImagePath;
+            
+            // 3. Get all project images
             const projectImages = document.querySelectorAll('.project-img img');
             
-            // Preload the default image to ensure it exists
-            const defaultImage = new Image();
-            defaultImage.src = 'images/default-image.jpg';
-            
+            // 4. Process each image
             projectImages.forEach(img => {
-                // Set default image if original fails to load
-                img.onerror = function() {
-                    console.log('Image failed to load: ' + this.src);
-                    this.src = 'images/default-image.jpg';
-                    this.alt = 'Project Image';
+                // Store the original source
+                const originalSrc = img.getAttribute('src');
+                
+                // 5. Create a new image object to test if the original source loads
+                const testImage = new Image();
+                
+                // 6. Set up error handler for the test image
+                testImage.onerror = function() {
+                    // If original image fails to load, use default
+                    img.src = defaultImagePath;
                 };
                 
-                // Also check if current src is valid
-                if (!img.complete || img.naturalHeight === 0) {
-                    img.src = 'images/default-image.jpg';
-                }
+                // 7. Set up load handler for the test image
+                testImage.onload = function() {
+                    // If original image loads successfully, keep it
+                    // (This ensures the original src is maintained if valid)
+                    img.src = originalSrc;
+                };
+                
+                // 8. Set up error handler for the actual image as a backup
+                img.onerror = function() {
+                    this.src = defaultImagePath;
+                };
+                
+                // 9. Start loading the test image
+                testImage.src = originalSrc;
             });
+            
+            // 10. Add CSS for default image styling directly in JavaScript
+            const style = document.createElement('style');
+            style.textContent = `
+                .project-img {
+                    position: relative;
+                    height: 200px;
+                    overflow: hidden;
+                    background-image: url('${defaultImagePath}');
+                    background-size: cover;
+                    background-position: center;
+                }
+                
+                .project-img img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            `;
+            document.head.appendChild(style);
         });
     </script>
 </body>
